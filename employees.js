@@ -20,7 +20,16 @@
 */
 
 //CODE HERE
+class Employee {
+    constructor(name, shifts) {
+        this.name = name;
+        this.shifts = shifts;
+    }
 
+    getSchdule(){
+        console.log(` ${name} and ${shift} `)
+    }
+}
 
 
 /*
@@ -34,6 +43,8 @@
 */
 
 //CODE HERE
+
+
 
 /*
     Call the `getSchedule` method on the

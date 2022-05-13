@@ -31,6 +31,14 @@
 */
 
 //CODE HERE
+const pizza = {
+    name: 'classic pepperoni',
+    price: 8.99,
+    category: 'entree',
+    popularity: 'most popular',
+    rating: 'five star',
+    tags: ['gluten-free', 'kids']
+};
 
 
 
@@ -43,7 +51,7 @@
 */
 
 //CODE HERE
-
+console.log(pizza.popularity)
 
 /*
     Second, log the second tag in your pizza's
@@ -53,7 +61,7 @@
 */
 
 //CODE HERE
-
+console.log(pizza.tags[i = 1]);
 
 /*
     Third, destructure the price off of the
@@ -63,7 +71,8 @@
 */
 
 //CODE HERE
-
+let { price } = pizza
+console.log([price] - 2);
 
 /*
     Fourth, and last, destructure the category
@@ -73,6 +82,8 @@
 */
 
 //CODE HERE
+let { category } = pizza
+console.log(category);
 
 
 //////////////////PROBLEM 3////////////////////
@@ -88,7 +99,13 @@
 */
 
 //CODE HERE
-
+let foodArr = {
+    name: 'smores pizza',
+    price: 10.99,
+    category: 'dessert',
+    popularity: 'three star',
+    tags: ['lactosse free', 'is glutten free']
+};
 
 
 //////////////////PROBLEM 4////////////////////
@@ -105,7 +122,7 @@
 
 //CODE HERE
 
-// const filteredFood = foodArr.filter(/* CALLBACK HERE */)
+const filteredFood = foodArr.filter(tags)
 
 
 
