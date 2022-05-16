@@ -21,13 +21,13 @@
 
 //CODE HERE
 class Employee {
-    constructor(name, shifts) {
+    constructor(name,shifts) {
         this.name = name;
         this.shifts = shifts;
     }
 
-    getSchdule(){
-        console.log(` ${name} and ${shift} `)
+    getSchdule = () => {
+        return console.log(` ${this.name} works ${this.shift}`)
     }
 }
 
@@ -43,6 +43,7 @@ class Employee {
 */
 
 //CODE HERE
+let empOne = new Employee('Jess',['weekday mornings','weekend afternoon'])
 
 
 
@@ -52,7 +53,7 @@ class Employee {
 */
 
 //CODE HERE
-
+empOne.getSchedule()
 
 /*
     Make a copy of the empOne object
@@ -67,6 +68,8 @@ class Employee {
 */
 
 //CODE HERE
+let empTwo = {...empOne}
+console.log(empTwo)
 
 
 

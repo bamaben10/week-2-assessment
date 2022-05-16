@@ -31,13 +31,13 @@
 */
 
 //CODE HERE
-const pizza = {
+let pizza = {
     name: 'classic pepperoni',
     price: 8.99,
     category: 'entree',
-    popularity: 'most popular',
+    popularity: '10',
     rating: 'five star',
-    tags: ['gluten-free', 'kids']
+    tags: ['gluten-free', 'kids', 'newyork']
 };
 
 
@@ -71,8 +71,8 @@ console.log(pizza.tags[i = 1]);
 */
 
 //CODE HERE
-let { price } = pizza
-console.log([price] - 2);
+const { price } = pizza //let price = pizza.price
+console.log(price)
 
 /*
     Fourth, and last, destructure the category
@@ -82,7 +82,7 @@ console.log([price] - 2);
 */
 
 //CODE HERE
-let { category } = pizza
+const { category } = pizza
 console.log(category);
 
 
@@ -122,7 +122,8 @@ let foodArr = {
 
 //CODE HERE
 
-const filteredFood = foodArr.filter(tags)
+const filteredFood = foodArr.filter(food => food.tags.includes('american'))
+console.log(filteredFood)
 
 
 
@@ -166,7 +167,18 @@ const filteredFood = foodArr.filter(tags)
 */
 
 //CODE HERE
-
+const filterByProperty = (property,number,type) => {
+    let filteredArray = foodArr.filter(food => {
+        if(type === 'above') {
+            return food[property] > number
+        } else  {
+            return food[property] < number
+        }
+    })
+    return filteredArray
+}
+console.log(filterbyProperty(price,10,below))
+console.log(filterByProperty(popularity,4,above))
 
 /*
     Invoke the `filterByProperty` function passing
@@ -175,4 +187,4 @@ const filteredFood = foodArr.filter(tags)
     You'll have to console.log to see the filtered array
 */
 
-//CODE HERE
+// CODE HERE

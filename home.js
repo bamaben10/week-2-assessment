@@ -22,9 +22,14 @@
 */
 
 //CODE HERE
+const greetUser = (username) => {
+    console.log(`WelcomeBack, ${username}`)
+}
 
+greetUser('Andrew')
 
-
+//parameter is the placeholder we use to create the function
+//argument is the actual value we pass in when we call the function
 
 
 //////////////////PROBLEM 2////////////////////
@@ -50,9 +55,18 @@
 const deliveryAreaZipCodes = [85205, 85204, 85203, 85213, 85206]
 
 //CODE HERE
-function canWeDeliver (deliveryAreaZipCodes) {
 
+const canWeDeliver = zipCode => {
+    for(let i = 0; i < deliveryAreaZipCodes.length; i++){
+        if(deliveryAreaZipCodes[i] === zipcode) {
+            return console.log(`You are in our delivery zone!`)
+        }
+    }
+    return console.log(`You are not in our delivery zone! Sorry`)
 }
+
+canWeDeliver(76767)
+canWeDeliver(85206)
 
 
 /* 
@@ -73,7 +87,16 @@ function canWeDeliver (deliveryAreaZipCodes) {
 */
 
 // CODE HERE
+const canWeDeliverTwo = zipCode => {
+    if(deliveryAreaZipCodes.includes(zipCode)){
+        return console.log(`we can deliver to you!`)
+    } else {
+        return console.log(`sorry, we can't deliver to you!`)
+    }
+}
 
+canWeDeliverTwo(85205)
+canWeDeliverTwo(90393)
 
 //////////////////PROBLEM 3////////////////////
 /* 
@@ -110,7 +133,8 @@ const deals = [
 
 //CODE HERE
 
-
+deals[0].title = deals[0].title.replace('15','10')
+console.log(deals)
 
 /*
     The restaurant is going to continue its
@@ -126,3 +150,6 @@ const deals = [
 */
 
 //CODE HERE
+
+deals[0].desc = deals[1].desc.replace('March','April') .trim()
+console.log(deals).3
