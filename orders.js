@@ -57,7 +57,7 @@ class Ticket {
 */
 
 //CODE HERE
-let firstTicket = new Ticket (['pizza','bread','soda','fruit'],"5:30 PM EST",634)
+let firstTicket = newTicket (['pizza','bread','soda','fruit'],"5:30 PM EST",634)
 console.log(firstTicket)
 
 /*

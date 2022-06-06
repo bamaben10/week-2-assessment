@@ -177,7 +177,7 @@ const filterByProperty = (property,number,type) => {
     })
     return filteredArray
 }
-console.log(filterbyProperty(price,10,below))
+console.log(filterByProperty(price,10,below))
 console.log(filterByProperty(popularity,4,above))
 
 /*
@@ -188,3 +188,5 @@ console.log(filterByProperty(popularity,4,above))
 */
 
 // CODE HERE
+
+console.log(filterByProperty());

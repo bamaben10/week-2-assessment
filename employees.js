@@ -97,6 +97,18 @@ console.log(empTwo)
 */
 
 //CODE HERE
+class Manager {
+    constructor(employees) {
+        this.employees;
+    }
+    getEmployees(emp) {
+        console.log('${name} manages [employees]')
+    }
+    addEmployee(emp) {
+        let emp = '${name}'
+        console.log(emp.push)
+    }
+}
 
 
 
@@ -112,7 +124,8 @@ console.log(empTwo)
 */
 
 //CODE HERE
-
+let Manager1 = new Manager
+console.log(Manager1.name)
 
 /*
     Call the `getEmployees` method on the
@@ -120,6 +133,7 @@ console.log(empTwo)
 */
 
 //CODE HERE
+getEmployees(manager)
 
 /*
     Call the `addEmployee` method on the 
@@ -128,6 +142,7 @@ console.log(empTwo)
 */
 
 //CODE HERE 
+addEmployee(manager)
 
 /*
     Call the `getEmployees` method on the
@@ -136,3 +151,4 @@ console.log(empTwo)
 */
 
 //CODE HERE
+getEmployees(manager)
